@@ -98,13 +98,20 @@ p.header__logo-title {
   text-decoration: none;
 }
 .header__navigation-menu-list-link_active {
-  color: #fff;
+  color: #ffffff;
   background-color: #d45e5e;
+}
+.header__navigation-menu-list-link_active:visited {
+  color: #ffffff;
 }
 .main-page-title {
   border-top: 1px solid white;
-  height: 300px;
-  background: url("../img/title_quotes.png") no-repeat 49.5% 72px;
+  border-bottom: 1px solid white;
+  min-height: 225px;
+  background: #fff url("../img/title_quotes.png") no-repeat 49.5% 72px;
+  position: relative;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 92px;
 }
 .main-page-title__text {
   font: 22.5px Cambria;
@@ -116,11 +123,41 @@ p.header__logo-title {
   padding-right: 29%;
   line-height: 1.6;
 }
+.main-page-title__image {
+  background: url("../img/pencil.png") no-repeat 0px -40px;
+  width: 104px;
+  height: 50px;
+  position: absolute;
+  bottom: -51px;
+  left: 44.2%;
+}
 .content {
-  width: 935px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: bisque;
+  min-height: 500px;
+  z-index: 10;
+  width: 1024px;
 }
 .content__position {
-  margin: 0 auto;
+  margin: 0 0 0 167px;
+}
+.content__title {
+  width: 100%;
+}
+.content__title-text {
+  width: 100%;
+  top: 0;
+  left: 19px;
+  font: 22.5px Cambria;
+  font-style: italic;
+  margin-left: 22px;
+  margin-bottom: 20px;
+}
+.content__item {
+  width: 208px;
+  height: 205px;
+  margin: 17px;
 }
 * {
   transition: all 1s;
@@ -128,6 +165,7 @@ p.header__logo-title {
 body {
   margin: 0;
   padding: 0;
+  font-family: Cambria;
   color: #404040;
 }
 ul,
@@ -145,6 +183,7 @@ a:visited {
   color: #404040;
 }
 .wrapper {
+  background-color: transparent;
   width: 1280px;
   margin: 0 auto;
 }
