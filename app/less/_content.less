@@ -36,8 +36,24 @@
   min-height: 500px;
   z-index: 10;
   width: 1024px;
+  @media only screen and (max-width: 1024px) {
+    width: 485px;
+    margin: 0 auto;
+  }
   &__position {
     margin: 0 0 0 167px;
+    @media only screen and (max-width: 1300px) {
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 1200px) {
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 1100px) {
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 1024px) {
+      margin: 0 auto;
+    }
   }
   &-title {
     &_position {

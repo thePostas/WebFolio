@@ -139,8 +139,34 @@ p.header__logo-title {
   z-index: 10;
   width: 1024px;
 }
+@media only screen and (max-width: 1024px) {
+  .content {
+    width: 485px;
+    margin: 0 auto;
+  }
+}
 .content__position {
   margin: 0 0 0 167px;
+}
+@media only screen and (max-width: 1300px) {
+  .content__position {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .content__position {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .content__position {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .content__position {
+    margin: 0 auto;
+  }
 }
 .content__title {
   width: 100%;
