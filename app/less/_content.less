@@ -6,6 +6,14 @@
   position: relative;
   box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
   margin-bottom: 92px;
+  @media only screen and (max-width: 700px) {
+    background-position: 45.5% 72px;
+    width: 700px;
+  }
+  @media only screen and (max-width: 650px) {
+    background-position: 49.5% 72px;
+    width: 700px;
+  }
   &__text {
     font: 22.5px Cambria;
     font-style: italic;
@@ -15,6 +23,14 @@
     padding-left: 29%;
     padding-right: 29%;
     line-height: 1.6;
+    @media only screen and (max-width: 700px) {
+      padding-left: 28%;
+      padding-right: 39%;
+    }
+    @media only screen and (max-width: 650px) {
+      padding-left: 32%;
+      padding-right: 35%;
+    }
   }
 }
 
@@ -26,33 +42,57 @@
   position: absolute;
   bottom: -51px;
   left: 44.2%;
+  @media only screen and (max-width: 1100px) {
+    left: 44%;
+  }
+  @media only screen and (max-width: 1000px) {
+    left: 43.5%;
+  }
+  @media only screen and (max-width: 900px) {
+    left: 43%;
+  }
+  @media only screen and (max-width: 800px) {
+    left: 42%;
+  }
+  @media only screen and (max-width: 700px) {
+    left: 38%;
+  }
+  @media only screen and (max-width: 650px) {
+    left: 40%;
+  }
+
 }
 
 
 .content {
   display: flex;
   flex-wrap: wrap;
-  background-color: bisque;
   min-height: 500px;
   z-index: 10;
   width: 1024px;
-  @media only screen and (max-width: 1024px) {
-    width: 485px;
-    margin: 0 auto;
-  }
+  box-sizing: border-box;
+  padding: 0 15px 0 39px;
+  margin-bottom: 121px;
   &__position {
-    margin: 0 0 0 167px;
-    @media only screen and (max-width: 1300px) {
-      margin: 0 auto;
-    }
-    @media only screen and (max-width: 1200px) {
-      margin: 0 auto;
-    }
-    @media only screen and (max-width: 1100px) {
-      margin: 0 auto;
-    }
+    margin: 0 auto;
+    margin-top: 92px;
     @media only screen and (max-width: 1024px) {
-      margin: 0 auto;
+      width: 550px;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin-left: 210px;
+    }
+    @media only screen and (max-width: 900px) {
+      margin-left: 160px;
+    }
+    @media only screen and (max-width: 800px) {
+      margin-left: 120px;
+    }
+    @media only screen and (max-width: 700px) {
+      margin-left: 80px;
+    }
+    @media only screen and (max-width: 650px) {
+      margin-left: 30px;
     }
   }
   &-title {
@@ -69,7 +109,6 @@
 .content__title-text {
   width: 100%;
   top: 0;
-  left: 19px;
   font: 22.5px Cambria;
   font-style: italic;
   margin-left: 22px;
@@ -80,4 +119,5 @@
   width: 208px;
   height: 205px;
   margin: 17px;
+  background-color: antiquewhite;
 }

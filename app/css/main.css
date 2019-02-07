@@ -66,9 +66,14 @@ p.header__logo-title {
     margin-right: 100px;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
   .header__navigation-menu {
-    margin-right: 130px;
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .header__navigation-menu {
+    width: 640px;
   }
 }
 .header__navigation-menu-list {
@@ -113,6 +118,18 @@ p.header__logo-title {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 92px;
 }
+@media only screen and (max-width: 700px) {
+  .main-page-title {
+    background-position: 45.5% 72px;
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .main-page-title {
+    background-position: 49.5% 72px;
+    width: 700px;
+  }
+}
 .main-page-title__text {
   font: 22.5px Cambria;
   font-style: italic;
@@ -123,6 +140,18 @@ p.header__logo-title {
   padding-right: 29%;
   line-height: 1.6;
 }
+@media only screen and (max-width: 700px) {
+  .main-page-title__text {
+    padding-left: 28%;
+    padding-right: 39%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .main-page-title__text {
+    padding-left: 32%;
+    padding-right: 35%;
+  }
+}
 .main-page-title__image {
   background: url("../img/pencil.png") no-repeat 0px -40px;
   width: 104px;
@@ -131,41 +160,78 @@ p.header__logo-title {
   bottom: -51px;
   left: 44.2%;
 }
+@media only screen and (max-width: 1100px) {
+  .main-page-title__image {
+    left: 44%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main-page-title__image {
+    left: 43.5%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .main-page-title__image {
+    left: 43%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .main-page-title__image {
+    left: 42%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main-page-title__image {
+    left: 38%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .main-page-title__image {
+    left: 40%;
+  }
+}
 .content {
   display: flex;
   flex-wrap: wrap;
-  background-color: bisque;
   min-height: 500px;
   z-index: 10;
   width: 1024px;
-}
-@media only screen and (max-width: 1024px) {
-  .content {
-    width: 485px;
-    margin: 0 auto;
-  }
+  box-sizing: border-box;
+  padding: 0 15px 0 39px;
+  margin-bottom: 121px;
 }
 .content__position {
-  margin: 0 0 0 167px;
-}
-@media only screen and (max-width: 1300px) {
-  .content__position {
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .content__position {
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .content__position {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+  margin-top: 92px;
 }
 @media only screen and (max-width: 1024px) {
   .content__position {
-    margin: 0 auto;
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .content__position {
+    margin-left: 210px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .content__position {
+    margin-left: 160px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .content__position {
+    margin-left: 120px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content__position {
+    margin-left: 80px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .content__position {
+    margin-left: 30px;
   }
 }
 .content__title {
@@ -174,7 +240,6 @@ p.header__logo-title {
 .content__title-text {
   width: 100%;
   top: 0;
-  left: 19px;
   font: 22.5px Cambria;
   font-style: italic;
   margin-left: 22px;
@@ -184,6 +249,7 @@ p.header__logo-title {
   width: 208px;
   height: 205px;
   margin: 17px;
+  background-color: antiquewhite;
 }
 * {
   transition: all 1s;
@@ -236,11 +302,6 @@ a:visited {
 @media only screen and (max-width: 800px) {
   .wrapper {
     width: 800px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .wrapper {
-    width: 700px;
   }
 }
 @media only screen and (max-width: 650px) {
