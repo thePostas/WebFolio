@@ -1,5 +1,6 @@
 @import url("_header.less");
 @import url("_content.less");
+@import url("_footer.less");
 @body-text-color: #404040;
 
 * {
@@ -24,7 +25,6 @@ a:visited {
 }
 
 .wrapper {
-  background-color: transparent;
   width: 1280px;
   margin: 0 auto;
   @media only screen and (max-width: 1200px) {
@@ -41,6 +41,9 @@ a:visited {
   }
   @media only screen and (max-width: 800px) {
     width: 800px;
+  }
+  @media only screen and (max-width: 700px) {
+    width: 700px;
   }
   @media only screen and (max-width: 650px) {
     width: 640px;

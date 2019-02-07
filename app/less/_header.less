@@ -8,11 +8,90 @@
 }
 
 .header {
+  width: 1280px;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 800px) {
     flex-direction: column;
+    width: 800px;
   }
+  @media screen and (max-width: 650px) {
+    width: 650px;
+  } &__logo {
+  margin: 34px 0 0 150px;
+  text-decoration: none;
+  box-sizing: border-box;
+  @media only screen and (max-width: 1000px) {
+    margin-left: 100px;
+  }
+  @media only screen and (max-width: 800px) {
+    margin-left: 0;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d0d0d0;
+  } &-title {
+    font: 36.5px BesasNeue;
+    font-weight: bold;
+  }
+} &__navigation-menu {
+          margin-right: 135px;
+          @media only screen and (max-width: 1200px) {
+            margin-right: 100px;
+          }
+
+          @media only screen and (max-width: 800px) {
+            width: 800px;
+          }
+
+          @media only screen and (max-width: 700px) {
+            width: 700px;
+          }
+
+          @media only screen and (max-width: 650px) {
+            width: 640px;
+          }
+          &-list {
+            margin: 0 auto;
+            display: flex;
+            height: 76px;
+            justify-content: flex-end;
+            @media screen and (max-width: 800px) {
+              height: 35px;
+            }
+            &-link {
+              display: block;
+            }
+            &-item {
+              text-transform: uppercase;
+              font: 16.5px HelveticaLT;
+              padding: 49px 13px 7px 12px;
+              text-align: center;
+              @media only screen and (max-width: 800px) {
+                margin: 0 30px;
+                padding: 10px 5px 0 5px;
+              }
+              &_second {
+                padding-left: 20px;
+                padding-right: 22px;
+              }
+              &_fourth {
+                padding-left: 20px;
+                padding-right: 20px;
+              }
+            }
+          }
+          &-list-link {
+            text-decoration: none;
+            &_active {
+              color: #ffffff;
+              background-color: #d45e5e;
+              &:visited {
+                color: #ffffff;
+              }
+            }
+          }
+        }
 }
 
 .logo {
@@ -22,23 +101,6 @@
   }
 }
 
-.header__logo {
-  margin: 34px 0 0 150px;
-  text-decoration: none;
-  @media only screen and (max-width: 1000px) {
-    margin-left: 100px;
-  }
-  @media only screen and (max-width: 800px) {
-      margin-left: 0;
-      padding-bottom: 30px;
-      padding-left: 50px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #d0d0d0;
-  } &-title {
-      font: 36.5px BesasNeue;
-      font-weight: bold;
-  }
-}
 
 p.header__logo-title {
   text-transform: capitalize;
@@ -46,54 +108,10 @@ p.header__logo-title {
 }
 
 .navigation-menu {
+  box-sizing: border-box;
   width: 350px;
+  display: flex;
   @media only screen and (max-width: 800px) {
-    display: flex;
     width: 100%;
-  }
-}
-
-.header__navigation-menu {
-  margin-right: 125px;
-  @media only screen and (max-width: 1200px) {
-    margin-right: 100px;
-  }
-
-  @media only screen and (max-width: 700px) {
-    width: 700px;
-  }
-  @media only screen and (max-width: 650px) {
-    width: 640px;
-  }
-  &-list {
-    margin: 0 auto;
-    display: flex;
-    &-item {
-      text-transform: uppercase;
-      font: 16.5px HelveticaLT;
-      padding: 49px 12px 7px 12px;
-      text-align: center;
-      @media only screen and (max-width: 800px) {
-        padding-top: 10px;
-      }
-      &_second {
-        padding-left: 20px;
-        padding-right: 22px;
-      }
-      &_fourth {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-  }
-  &-list-link {
-    text-decoration: none;
-    &_active {
-      color: #ffffff;
-      background-color: #d45e5e;
-      &:visited {
-        color: #ffffff;
-      }
-    }
   }
 }

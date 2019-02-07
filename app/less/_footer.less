@@ -1,0 +1,123 @@
+@font-face{
+  font-family: 'PTSans';
+  src: url('../fonts/PTSans/PTSans.ttf') format('truetype');
+}
+
+.footer {
+  background-color: #d45e5e;
+  width: 100%;
+  color: #fff;
+  font: 12.5px PTSans;
+  @media only screen and (max-width: 1200px) {
+    width: 1200px;
+  }
+  @media only screen and (max-width: 1100px) {
+    width: 1100px;
+  }
+  @media only screen and (max-width: 1000px) {
+    width: 1000px;
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 900px) {
+    width: 900px;
+  }
+  @media only screen and (max-width: 800px) {
+    width: 800px;
+  }
+  @media screen and (max-width: 650px) {
+    width: 640px;
+  }
+  &__inner-footer {
+    width: 920px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-bottom: 37px;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+  }
+    &-left-section {
+      box-sizing: border-box;
+      width: 68%;
+      @media only screen and (max-width: 1000px) {
+        width: 100%;
+        padding: 0 100px;
+      }
+      @media only screen and (max-width: 800px) {
+        border-bottom: 1px solid #fff;
+      }
+      &-author {
+        position: relative;
+        display: flex;
+        &-photo {
+          position: absolute;
+          bottom: -11px;
+          left: 2px;
+          border: 7px solid #fff;
+          width: 123px;
+          height: 123px;
+        }
+        &-description {
+          margin: 17px 0 0 166px;
+          &-name {
+            font: 24.5px Cambria;
+            font-style: italic;
+          }
+          &-address {
+            margin-top: 8px;
+            padding-left: 22px;
+            background: url("../img/location_icon.png") no-repeat 0 0;
+          }
+        }
+        &-socials {
+          display: flex;
+          position: absolute;
+          right: 62px;
+          top: 28px;
+          @media only screen and (max-width: 800px) {
+            left: 10%;
+            top: 290px;
+          }
+          &-twitter {
+            margin-right: 22px;
+            @media only screen and (max-width: 800px) {
+              margin-right: 150px;
+            }
+            &:after {
+              @media only screen and (max-width: 800px) {
+                content: "Twitter";
+                position: absolute;
+                bottom: 15px;
+                left: 70px;
+              }
+            }
+          }
+          &-dribbble {
+            &:after {
+              @media only screen and (max-width: 800px) {
+                content: "Dribbble";
+                position: absolute;
+                bottom: 15px;
+                left: 250px;
+              }
+            }
+          }
+        }
+        &-text {
+          line-height: 1.6;
+          box-sizing: border-box;
+          padding-right: 10px;
+          margin-top: 36px;
+          @media only screen and (max-width: 800px) {
+            margin-bottom: 125px;
+          }
+        }
+      }
+    }
+    &-right-section {
+      width: 32%;
+      height: 100px;
+    }
+  }
+}

@@ -7,7 +7,7 @@
   box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
   margin-bottom: 92px;
   @media only screen and (max-width: 700px) {
-    background-position: 45.5% 72px;
+    background-position: 49.5% 72px;
     width: 700px;
   }
   @media only screen and (max-width: 650px) {
@@ -24,45 +24,41 @@
     padding-right: 29%;
     line-height: 1.6;
     @media only screen and (max-width: 700px) {
-      padding-left: 28%;
-      padding-right: 39%;
+      padding-left: 30%;
+      padding-right: 33%;
     }
     @media only screen and (max-width: 650px) {
       padding-left: 32%;
       padding-right: 35%;
     }
   }
+  &__image {
+    background: url("../img/pencil.png") no-repeat 0px -40px;
+    width: 104px;
+    height: 50px;
+    position: absolute;
+    bottom: -51px;
+    left: 44.2%;
+    @media only screen and (max-width: 1100px) {
+      left: 44%;
+    }
+    @media only screen and (max-width: 1000px) {
+      left: 43.5%;
+    }
+    @media only screen and (max-width: 900px) {
+      left: 43%;
+    }
+    @media only screen and (max-width: 800px) {
+      left: 42%;
+    }
+    @media only screen and (max-width: 700px) {
+      left: 42%;
+    }
+    @media only screen and (max-width: 650px) {
+      left: 40%;
+    }
+  }
 }
-
-
-.main-page-title__image {
-  background: url("../img/pencil.png") no-repeat 0px -40px;
-  width: 104px;
-  height: 50px;
-  position: absolute;
-  bottom: -51px;
-  left: 44.2%;
-  @media only screen and (max-width: 1100px) {
-    left: 44%;
-  }
-  @media only screen and (max-width: 1000px) {
-    left: 43.5%;
-  }
-  @media only screen and (max-width: 900px) {
-    left: 43%;
-  }
-  @media only screen and (max-width: 800px) {
-    left: 42%;
-  }
-  @media only screen and (max-width: 700px) {
-    left: 38%;
-  }
-  @media only screen and (max-width: 650px) {
-    left: 40%;
-  }
-
-}
-
 
 .content {
   display: flex;
@@ -72,10 +68,10 @@
   width: 1024px;
   box-sizing: border-box;
   padding: 0 15px 0 39px;
-  margin-bottom: 121px;
   &__position {
     margin: 0 auto;
-    margin-top: 92px;
+    margin-top: 93px;
+    margin-bottom: 103px;
     @media only screen and (max-width: 1024px) {
       width: 550px;
     }
@@ -95,29 +91,25 @@
       margin-left: 30px;
     }
   }
-  &-title {
-    &_position {
-
+  &__title {
+    width: 100%;
+    &-text {
+      width: 100%;
+      top: 0;
+      font: 22.5px Cambria;
+      font-style: italic;
+      margin-left: 22px;
+      margin-bottom: 21px;
     }
   }
-}
-
-.content__title {
-  width: 100%;
-}
-
-.content__title-text {
-  width: 100%;
-  top: 0;
-  font: 22.5px Cambria;
-  font-style: italic;
-  margin-left: 22px;
-  margin-bottom: 20px;
-}
-
-.content__item {
-  width: 208px;
-  height: 205px;
-  margin: 17px;
-  background-color: antiquewhite;
+  &__item {
+    width: 208px;
+    height: 205px;
+    margin: 17px 17px 15px 17px;
+    background-color: antiquewhite;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
