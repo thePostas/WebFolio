@@ -80,12 +80,21 @@
   }
 }
 .header__navigation-menu-list-link {
+  padding: 49px 13px 7px 12px;
   display: block;
+  color: #404040;
+}
+.header__navigation-menu-list-link_second {
+  padding-left: 20px;
+  padding-right: 22px;
+}
+.header__navigation-menu-list-link_fourth {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .header__navigation-menu-list-item {
   text-transform: uppercase;
   font: 16.5px HelveticaLT;
-  padding: 49px 13px 7px 12px;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
@@ -93,14 +102,6 @@
     margin: 0 30px;
     padding: 10px 5px 0 5px;
   }
-}
-.header__navigation-menu-list-item_second {
-  padding-left: 20px;
-  padding-right: 22px;
-}
-.header__navigation-menu-list-item_fourth {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .header__navigation-menu-list-link {
   text-decoration: none;
