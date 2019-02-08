@@ -16,7 +16,6 @@
   }
   @media only screen and (max-width: 1000px) {
     width: 1000px;
-    flex-direction: column;
   }
   @media only screen and (max-width: 900px) {
     width: 900px;
@@ -28,25 +27,31 @@
     width: 640px;
   }
   &__inner-footer {
-    width: 920px;
     display: flex;
-    flex-direction: column;
     box-sizing: border-box;
     margin: 0 auto;
     padding-bottom: 37px;
-    @media only screen and (max-width: 800px) {
-      width: 100%;
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
   }
+
     &-left-section {
       box-sizing: border-box;
       width: 68%;
       @media only screen and (max-width: 1000px) {
         width: 100%;
+        border-bottom: 1px solid #fff;
         padding: 0 100px;
       }
-      @media only screen and (max-width: 800px) {
-        border-bottom: 1px solid #fff;
-      }
+      //@media only screen and (max-width: 900px) {
+      //  width: 900px;
+      //}
+      //@media only screen and (max-width: 800px) {
+      //  width: 800px;
+      //}
+      //@media screen and (max-width: 650px) {
+      //  width: 640px;
+      //}
       &-author {
         position: relative;
         display: flex;
@@ -76,31 +81,12 @@
           right: 62px;
           top: 28px;
           @media only screen and (max-width: 800px) {
-            left: 10%;
-            top: 290px;
+            display: none;
           }
           &-twitter {
             margin-right: 22px;
             @media only screen and (max-width: 800px) {
               margin-right: 150px;
-            }
-            &:after {
-              @media only screen and (max-width: 800px) {
-                content: "Twitter";
-                position: absolute;
-                bottom: 15px;
-                left: 70px;
-              }
-            }
-          }
-          &-dribbble {
-            &:after {
-              @media only screen and (max-width: 800px) {
-                content: "Dribbble";
-                position: absolute;
-                bottom: 15px;
-                left: 250px;
-              }
             }
           }
         }
@@ -109,15 +95,111 @@
           box-sizing: border-box;
           padding-right: 10px;
           margin-top: 36px;
-          @media only screen and (max-width: 800px) {
-            margin-bottom: 125px;
+          @media only screen and (max-width: 1000px) {
+            margin-bottom: 50px;
+          }
+        }
+      }
+      &-hidden-socials {
+        margin-top: 50px;
+        margin-left: 100px;
+        display: none;
+        @media only screen and (max-width: 1000px) {
+          margin-bottom: 50px;
+        }
+        @media only screen and (max-width: 800px) {
+          display: flex;
+        }
+        &-twitter {
+          margin-right: 200px;
+          position: relative;
+          &:after {
+            @media only screen and (max-width: 800px) {
+              content: "Dribbble";
+              position: absolute;
+              bottom: 15px;
+              left: 50px;
+            }
+          }
+        }
+        &-dribbble {
+          position: relative;
+          &:after {
+            @media only screen and (max-width: 800px) {
+              content: "Dribbble";
+              position: absolute;
+              bottom: 15px;
+              left: 70px;
+            }
           }
         }
       }
     }
     &-right-section {
       width: 32%;
-      height: 100px;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 57px 0 0 36px;
+      @media only screen and (max-width: 1000px) {
+        margin: 0 auto;
+      }
+      &-name {
+        font: 24.5px Cambria;
+        margin-bottom: 23px;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: 1000px) {
+          transform: scale(1.5);
+        }
+       &-item {
+         font: 18.5px PTSans;
+         margin-bottom: 1px;
+         display: flex;
+         &-span {
+           width: 28px
+         }
+         &-progress-bar {
+           margin-top: 8px;
+           height: 10px;
+           width: 200px;
+           background-color: #e27878;
+           &-filled {
+             background-color: black;
+             height: 100%;
+             &_ps {
+               width: 54%;
+             }
+             &_ai {
+               width: 78%;
+             }
+             &_bs {
+               width: 28%;
+             }
+             &_cs {
+               width: 92%;
+             }
+           }
+         }
+       }
+      }
+    }
+  }
+  &__footer-bottom {
+    height: 40px;
+    background-color: #282828;
+    &-inner {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 52%;
+      margin: 0 auto;
+      @media screen and (max-width: 800px) {
+        width: 90%;
+      }
+      &-copyright {
+        line-height: 3;
+      }
     }
   }
 }
