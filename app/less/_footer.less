@@ -27,14 +27,27 @@
     width: 640px;
   }
   &__inner-footer {
+    width: 920px;
     display: flex;
     box-sizing: border-box;
     margin: 0 auto;
     padding-bottom: 37px;
     @media only screen and (max-width: 1000px) {
+      width: 1000px;
       flex-direction: column;
   }
-
+    @media only screen and (max-width: 900px) {
+      width: 900px;
+    }
+    @media only screen and (max-width: 800px) {
+      width: 800px;
+    }
+    @media only screen and (max-width: 700px) {
+      width: 700px;
+    }
+    @media only screen and (max-width: 650px) {
+      width: 640px;
+    }
     &-left-section {
       box-sizing: border-box;
       width: 68%;
