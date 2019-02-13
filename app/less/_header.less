@@ -8,7 +8,8 @@
 }
 
 .header {
-  width: 1280px;
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 800px) {
@@ -16,7 +17,7 @@
     width: 800px;
   }
   @media screen and (max-width: 650px) {
-    width: 650px;
+    min-width: 640px;
   } &__logo {
   margin: 34px 0 0 150px;
   text-decoration: none;
@@ -35,21 +36,11 @@
     font-weight: bold;
   }
 } &__navigation-menu {
+          max-width: 1200px;
+          min-width: 640px;
           margin-right: 135px;
           @media only screen and (max-width: 1200px) {
             margin-right: 100px;
-          }
-
-          @media only screen and (max-width: 800px) {
-            width: 800px;
-          }
-
-          @media only screen and (max-width: 700px) {
-            width: 700px;
-          }
-
-          @media only screen and (max-width: 650px) {
-            width: 640px;
           }
           &-list {
             margin: 0 auto;
