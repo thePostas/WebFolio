@@ -7,7 +7,8 @@
   src: url('../fonts/Helvetica/HelveticaLT.ttf') format('truetype');
 }
 .header {
-  max-width: 1280px;
+  max-width: 100%;
+  min-width: 640px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -49,7 +50,7 @@
 .header__navigation-menu {
   max-width: 1200px;
   min-width: 640px;
-  margin-right: 135px;
+  margin-right: -6px;
 }
 @media only screen and (max-width: 1200px) {
   .header__navigation-menu {
@@ -69,6 +70,7 @@
 .header__navigation-menu-list-link {
   text-decoration: none;
   padding: 49px 13px 7px 12px;
+  margin: 0 4px;
   display: block;
   color: #404040;
 }
@@ -147,8 +149,8 @@ p.header__logo-title {
   opacity: 1;
   text-align: center;
   margin-top: 133px;
-  padding-left: 29%;
-  padding-right: 29%;
+  padding-left: 34%;
+  padding-right: 34%;
   line-height: 1.6;
 }
 @media only screen and (max-width: 700px) {
@@ -169,7 +171,7 @@ p.header__logo-title {
   height: 50px;
   position: absolute;
   bottom: -51px;
-  left: 44.2%;
+  left: 46.1%;
 }
 @media only screen and (max-width: 1100px) {
   .main-page-title__image {
@@ -275,68 +277,19 @@ p.header__logo-title {
   width: 100%;
   color: #fff;
   font: 12.5px PTSans;
-}
-@media only screen and (max-width: 1200px) {
-  .footer {
-    width: 1200px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .footer {
-    width: 1100px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .footer {
-    width: 1000px;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .footer {
-    width: 900px;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .footer {
-    width: 800px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .footer {
-    width: 640px;
-  }
+  max-width: 100%;
+  min-width: 640px;
 }
 .footer__inner-footer {
-  width: 920px;
+  max-width: 920px;
   display: flex;
   box-sizing: border-box;
   margin: 0 auto;
   padding-bottom: 37px;
 }
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .footer__inner-footer {
-    width: 1000px;
     flex-direction: column;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .footer__inner-footer {
-    width: 900px;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .footer__inner-footer {
-    width: 800px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .footer__inner-footer {
-    width: 700px;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .footer__inner-footer {
-    width: 640px;
   }
 }
 .footer__inner-footer-left-section {

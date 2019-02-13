@@ -4,9 +4,9 @@
     <list default="true" id="f4847e4d-ecdc-4fcd-b46e-c4adbfaa6128" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/less/_content.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/_content.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/less/_footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/_footer.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/less/_header.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/_header.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/less/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/less/main.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_footer.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_footer.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/less/_footer.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="187">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -42,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1709">
-              <caret line="481" column="32" lean-forward="true" selection-start-line="481" selection-start-column="32" selection-end-line="481" selection-end-column="32" />
+              <caret line="459" column="32" lean-forward="true" selection-start-line="459" selection-start-column="32" selection-end-line="459" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -50,8 +50,8 @@
       <file leaf-file-name="_content.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/less/_content.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-476">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_header.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/less/_header.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="17">
+              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -78,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header__navigation-menu</find>
       <find>485</find>
       <find>img</find>
       <find>cam</find>
@@ -108,6 +107,7 @@
       <find>left</find>
       <find>content</find>
       <find>wrapper</find>
+      <find>46.2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,11 +118,11 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/css/main.css" />
-        <option value="$PROJECT_DIR$/app/less/_content.less" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/less/main.less" />
-        <option value="$PROJECT_DIR$/app/less/_header.less" />
+        <option value="$PROJECT_DIR$/app/less/_content.less" />
         <option value="$PROJECT_DIR$/app/less/_footer.less" />
+        <option value="$PROJECT_DIR$/app/less/_header.less" />
       </list>
     </option>
   </component>
@@ -221,12 +221,12 @@
       <workItem from="1549603668779" duration="63000" />
       <workItem from="1549608345099" duration="11025000" />
       <workItem from="1549948050616" duration="81000" />
-      <workItem from="1550063097279" duration="1174000" />
+      <workItem from="1550063097279" duration="2880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68514000" />
+    <option name="totallyTimeSpent" value="70220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -580,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/less/_header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/less/main.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -594,24 +587,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/less/_content.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-476">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1709">
-          <caret line="481" column="32" lean-forward="true" selection-start-line="481" selection-start-column="32" selection-end-line="481" selection-end-column="32" />
+          <caret line="459" column="32" lean-forward="true" selection-start-line="459" selection-start-column="32" selection-end-line="459" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/_content.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/less/_footer.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/less/_header.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
