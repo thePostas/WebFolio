@@ -9,20 +9,15 @@
 
 .header {
   max-width: 100%;
-  min-width: 640px;
   margin: 0 auto;
-  display: flex;
   justify-content: space-between;
-  @media only screen and (max-width: 800px) {
-    flex-direction: column;
-    width: 800px;
-  }
   @media screen and (max-width: 650px) {
     min-width: 640px;
   } &__logo {
-  margin: 34px 0 0 150px;
+  margin: 34px 0 0 8px;
   text-decoration: none;
   box-sizing: border-box;
+  width: 160px;
   @media only screen and (max-width: 1000px) {
     margin-left: 100px;
   }
@@ -38,8 +33,6 @@
   }
 } &__navigation-menu {
           max-width: 1200px;
-          min-width: 640px;
-          margin-right: -6px;
           @media only screen and (max-width: 1200px) {
             margin-right: 100px;
           }
@@ -92,6 +85,16 @@
           }
 
         }
+  &__inner-header {
+    display: flex;
+    max-width: 1000px;
+    min-width: 640px;
+    margin: 0 auto;
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
 }
 
 .logo {
